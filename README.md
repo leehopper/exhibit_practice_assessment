@@ -1,5 +1,6 @@
 #Iteration 1
-``pry(main)> require './lib/exhibit'
+```ruby
+pry(main)> require './lib/exhibit'
 # => true
 pry(main)> require './lib/patron'
 # => true
@@ -20,11 +21,13 @@ pry(main)> patron_1.interests
 pry(main)> patron_1.add_interest("Dead Sea Scrolls")
 pry(main)> patron_1.add_interest("Gems and Minerals")
 pry(main)> patron_1.interests
-# => ["Dead Sea Scrolls", "Gems and Minerals"]``
+# => ["Dead Sea Scrolls", "Gems and Minerals"]
+```
 
 
 # Iteration 2
-``pry(main)> require './lib/museum'
+```ruby
+pry(main)> require './lib/museum'
 # => true
 pry(main)> require './lib/patron'
 # => true
@@ -57,11 +60,13 @@ pry(main)> patron_2.add_interest("IMAX")
 pry(main)> dmns.recommend_exhibits(patron_1)
 # => [#<Exhibit:0x00007fb400bbcdd8...>, #<Exhibit:0x00007fb400b851f8...>]
 pry(main)> dmns.recommend_exhibits(patron_2)
-# => [#<Exhibit:0x00007fb400acc590...>]``
+# => [#<Exhibit:0x00007fb400acc590...>]
+```
 
 
 # Iteration 3
-``pry(main)> require './lib/museum'
+```ruby
+pry(main)> require './lib/museum'
 # => true
 pry(main)> require './lib/patron'
 # => true
@@ -115,11 +120,13 @@ pry(main)> dmns.announce_lottery_winner(dead_sea_scrolls)
 # The above string should match exactly, you will need to stub the return of `draw_lottery_winner` as the above method should depend on the return value of `draw_lottery_winner`.
 pry(main)> dmns.announce_lottery_winner(gems_and_minerals)
 # => "No winners for this lottery"
-# If there are no contestants, there are no winners.``
+# If there are no contestants, there are no winners.
+```
 
 
 # Iteration 4
-``pry(main)> require './lib/museum'
+```ruby
+pry(main)> require './lib/museum'
 # => true
 pry(main)> require './lib/patron'
 # => true
@@ -180,4 +187,5 @@ pry(main)> dmns.patrons_of_exhibits
 #   #<Exhibit:0x00007f9018a51248...> => [#<Patron:0x00007f90180e0948...>]
 # }
 pry(main)> dmns.revenue
-# => 35``
+# => 35
+```
